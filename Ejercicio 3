@@ -2,7 +2,7 @@ Ejercicio 1
 git branch bibliografia
 git checkout bibliografia
 git switch bibliografia
-git branch
+git branch -av
 
 Ejercicio 2
 git checkout bibliografia
@@ -11,14 +11,11 @@ notepad capitulos/capitulo4.txt
 git add capitulos/capitulo4.txt
 git commit -m "Añadir capítulo 4"
 git add capitulos/capitulo4.txt
-git commit -m "Añadir capítulo 4"
-git add capitulos/capitulo4.txt
 git commit -m "Añadido capítulo 4."
-git log --all --graph --oneline
-git log --all
+git log --oneline
 
 Ejercicio 3
-git switch bibliografia
+git checkout bibliografia
 echo "Chacon, S. and Straub, B. Pro Git. Apress." > bibliografia.txt
 git add bibliografia.txt
 git commit -m "Añadir referencia de Pro Git a bibliografia.txt"
@@ -32,10 +29,10 @@ git checkout master
 git merge bibliografia
 git commit -m "Merge bibliografia into master"
 git branch -d bibliografia
-git log --all --graph --oneline --decorate
+git log --oneline --decorate
 git branch -d bibliografia
 git branch -D bibliografia
-git log --all --graph --oneline --decorate
+git log --oneline
 
 Ejercicio 5
 
