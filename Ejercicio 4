@@ -1,0 +1,97 @@
+Ejercicio 1
+1.
+git init
+mkdir libro-git
+cd libro-git
+echo "# Libro Git" >> README.md
+git add README.md
+git commit -m "Primer commit - Añade README"
+git remote add origin https://github.com/nombre-de-usuario/libro-git.git
+git push -u origin master
+2.
+git remote add origin https://github.com/nombre-de-usuario/libro-git.git
+git remote -v
+git push -u origin master
+3.
+git remote -v
+origin  https://github.com/nombre-de-usuario/libro-git.git (fetch)
+origin  https://github.com/nombre-de-usuario/libro-git.git (push)
+
+Ejercicio 2
+1.
+git checkout master
+git add .
+git commit -m "Descripción del commit"
+git push origin master
+2.
+git log
+
+Ejercicio 3
+1.
+git clone https://github.com/tu-usuario/libro-git.git
+cd libro-git
+git remote add upstream https://github.com/usuario-original/libro-git.git
+git checkout -b mi-rama-de-colaboracion
+git add .
+git commit -m "Descripción de mis cambios"
+git push origin mi-rama-de-colaboracion
+2.
+git clone https://github.com/EQ4209/libro-git.git
+cd libro-git
+3.
+cd libro-git
+echo "NombreDeUsuario" > autores.txt
+echo "correo@example.com" >> autores.txt
+git add autores.txt
+git commit -m "Añadir archivo autores.txt"
+git push origin master
+4.
+cd libro-git
+echo "NombreDeUsuario" > autores.txt
+echo "correo@example.com" >> autores.txt
+git add autores.txt
+git commit -m "Añadir archivo autores.txt"
+5.
+cd libro-git
+git commit -m "Añadido autor."
+git push origin master
+6.
+git push origin master
+git push mi-repositorio-remoto master
+
+Ejercicio 4
+1.
+git clone https://github.com/EQ4209/libro-git.git
+2.
+git clone https://github.com/EQ4209/libro-git.git
+cd libro-git
+3.
+git checkout master
+git checkout -b autoria
+git branch
+4.
+git checkout autoria
+nano autores.txt o vim autores.txt
+echo "NombreDeUsuario" >> autores.txt
+echo "correo@example.com" >> autores.txt
+git add autores.txt
+git commit -m "Añadir nombre de usuario y correo a autores.txt"
+git push origin autoria
+5.
+git checkout autoria
+git add autores.txt
+git commit -m "Añadir nombre de usuario y correo a autores.txt"
+git push origin autoria
+6.
+git checkout autoria
+git add autores.txt
+git commit -m "Añadido nuevo autor."
+git push origin autoria
+7.
+git checkout autoria
+git add autores.txt
+git commit -m "Añadido nuevo autor."
+git push origin autoria
+8.
+git push origin autoria
+
