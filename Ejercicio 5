@@ -42,3 +42,44 @@ git add .
 git status
 5.
 git status
+6.
+git reset HEAD nombre_del_archivo
+git status
+git checkout -- nombre_del_archivo
+7.
+git status
+git checkout -- .
+git status
+9.
+git status
+
+Ejercicio 4
+1.
+(Get-Content "indice.txt" | Select-Object -First ((Get-Content "indice.txt").Count - 1)) | Set-Content "indice.txt"
+2.
+del capitulos\capitulo3.txt
+3.
+git add .
+git commit -m "Borrado accidental."
+git status
+4.
+git log
+git log --oneline
+5.
+git reset --soft HEAD^
+6.
+git log
+git status
+git add .
+git commit -m "Nuevo commit con ajustes"
+7.
+git add .
+git commit --amend -m "Borrado accidental."
+git status
+git log
+8.
+git reset --hard HEAD^
+git status
+9.
+git log
+git status
