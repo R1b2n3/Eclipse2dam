@@ -1,0 +1,44 @@
+Ejercicio 1
+1.
+(Get-Content indice.txt).TrimEnd() | Set-Content indice.txt
+2.
+git status
+git diff
+git status -s
+3.
+git checkout -- indice.txt
+git stash save "Mis cambios temporales"
+git stash apply
+4.
+git status
+
+Ejercicio 2
+1.
+(Get-Content "indice.txt" | Select-Object -First ((Get-Content "indice.txt").Count - 1)) | Set-Content "indice.txt"
+2.
+git add indice.txt
+3.
+git status
+4.
+git reset HEAD indice.txt
+git checkout -- indice.txt
+5.
+git status
+6.
+git checkout -- indice.txt
+git status
+7.
+git status
+
+Ejercicio 3
+1.
+(Get-Content "indice.txt") | ForEach-Object {$_} | Set-Content "indice.txt"
+2.
+del capitulos\capitulo3.txt
+3.
+echo. > capitulos\capitulo4.txt
+4.
+git add .
+git status
+5.
+git status
