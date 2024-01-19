@@ -1,17 +1,8 @@
 Ejercicio 1
 1.
-git init
-mkdir libro-git
-cd libro-git
-echo "# Libro Git" >> README.md
-git add README.md
-git commit -m "Primer commit - Añade README"
-git remote add origin https://github.com/nombre-de-usuario/libro-git.git
-git push -u origin master
+Crear en github
 2.
 git remote add origin https://github.com/nombre-de-usuario/libro-git.git
-git remote -v
-git push -u origin master
 3.
 git remote -v
 origin  https://github.com/nombre-de-usuario/libro-git.git (fetch)
@@ -47,7 +38,7 @@ git commit -m "Añadir archivo autores.txt"
 git push origin master
 4.
 cd libro-git
-echo "NombreDeUsuario" > autores.txt
+echo NombreDeUsuario > autores.txt
 echo "correo@example.com" >> autores.txt
 git add autores.txt
 git commit -m "Añadir archivo autores.txt"
